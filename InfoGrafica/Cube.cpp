@@ -11,5 +11,6 @@ void Cube::Init()
 void Cube::Update(float deltaTime)
 {
 	float velocidad = 5.0f;
-	cube.GetRotation().y += velocidad * deltaTime;
+	Entity rotation;
+	rotation.GetRotation().y += velocidad * deltaTime;
 }

@@ -14,6 +14,6 @@ public:
 private:
 	Window mainWindow;
 	Shader mainShader;
-	std::vector objectList;
+	std::vector<Object*> objectList;
 	glm::mat4 projection;
 };
