@@ -6,7 +6,7 @@
 #include "Shader.h"
 #include "Entity.h"
 
-class Object : Entity
+class Object : public Entity
 {
 public:
 	Object();
@@ -16,7 +16,9 @@ public:
 	virtual void Init() = 0;
 	virtual void Render(const glm::mat4& projection);
 
-private:
+	Mesh GetMesh() { return mesh; }
+
+protected:
 	Mesh mesh;
 	Shader* shader;
 };

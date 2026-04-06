@@ -15,7 +15,7 @@ void Shader::CreateShadersFromFile(const char* vertexPath, const char* fragmentP
     std::string fS = ReadFile(fragmentPath);
     const char* vertexCode = vS.c_str();
     const char* fragmentCode = fS.c_str();
- 
+
     CompileShader(vertexCode, fragmentCode);
 }
 
@@ -32,7 +32,7 @@ void Shader::deleteShader()
         uniformModel = 0;
         uniformProjection = 0;
     }
-    
+
 }
 
 Shader::~Shader()

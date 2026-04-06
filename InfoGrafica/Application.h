@@ -6,12 +6,21 @@
 #include "Object.h"
 #include "Shader.h"
 #include "Window.h"
+#include "Triangle.h"
+#include "Cube.h"
 
-class Application : Object
+class Application
 {
 public:
+	Application();
+	~Application();
+
+	int Initialise();
+	void Run();
 
 private:
+	void CreateObjects();
+
 	Window mainWindow;
 	Shader mainShader;
 	std::vector<Object*> objectList;

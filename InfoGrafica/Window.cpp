@@ -2,8 +2,8 @@
 
 Window::Window(GLint width, GLint height)
 {
-	this->width = width;
-	this->height = height;
+    this->width = width;
+    this->height = height;
 }
 
 int Window::Initialize()
@@ -49,6 +49,6 @@ int Window::Initialize()
 
 Window::~Window()
 {
-	glfwDestroyWindow(window);
-	glfwTerminate();
+    glfwDestroyWindow(window);
+    glfwTerminate();
 }

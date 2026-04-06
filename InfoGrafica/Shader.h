@@ -24,7 +24,7 @@ public:
 
 
 private:
-	GLuint idShader = 0, uniformModel = 0, uniformProjection  = 0;
+	GLuint idShader = 0, uniformModel = 0, uniformProjection = 0;
 	std::string ReadFile(const char* path);
 	void AddShader(const char* shaderCode, GLenum shaderType);
 	void CompileShader(const char* vertexCode, const char* fragmentCode);

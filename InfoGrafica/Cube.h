@@ -5,11 +5,10 @@
 #include "Object.h"
 #include "Shader.h"
 
-class Cube : Object
+class Cube : public Object
 {
 public:
 	Cube(Shader* shader);
 	void Init() override;
 	void Update(float deltaTime) override;
 };
-

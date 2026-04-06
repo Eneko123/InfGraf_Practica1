@@ -5,7 +5,7 @@
 #include "Object.h"
 #include "Shader.h"
 
-class Triangle : Object
+class Triangle : public Object
 {
 public:
 	Triangle(Shader* shader);
