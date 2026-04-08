@@ -8,7 +8,7 @@ Application::Application()
 
 Application::~Application()
 {
-	// Liberamos todos los objetos creados dinámicamente
+	// Liberamos todos los objetos creados dinamicamente
 	for (Object* obj : objectList)
 	{
 		delete obj;
@@ -28,7 +28,7 @@ int Application::Initialise()
 	// 2. Cargar el shader principal
 	mainShader.CreateShadersFromFile("Shaders/shader.vert", "Shaders/shader.frag");
 
-	// 3. Crear la matriz de proyección en perspectiva
+	// 3. Crear la matriz de proyeccion en perspectiva
 	projection = glm::perspective(
 		glm::radians(45.0f),
 		(GLfloat)mainWindow.getBufferWidth() / (GLfloat)mainWindow.getBufferHeight(),
@@ -44,7 +44,7 @@ int Application::Initialise()
 
 void Application::CreateObjects()
 {
-	// Crear un triángulo
+	// Crear un triangulo
 	Triangle* triangle = new Triangle(&mainShader);
 	triangle->Init();
 	triangle->SetPosition(-1.5f, 0.0f, -6.0f);
@@ -72,7 +72,7 @@ void Application::Run()
 		deltaTime = currentTime - lastTime;
 		lastTime = currentTime;
 
-		// Procesar eventos (teclado, ratón, etc.)
+		// Procesar eventos (teclado, raton, etc.)
 		glfwPollEvents();
 
 		// Limpiar la pantalla
@@ -82,7 +82,7 @@ void Application::Run()
 		// Actualizar y renderizar todos los objetos
 		for (Object* obj : objectList)
 		{
-			// Actualizar el objeto (animaciones, física, etc.)
+			// Actualizar el objeto (animaciones, fisica, etc.)
 			obj->Update(deltaTime);
 
 			// Renderizar el objeto

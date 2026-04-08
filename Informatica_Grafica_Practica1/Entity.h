@@ -26,4 +26,3 @@ private:
 	glm::vec3 rotation;
 	glm::vec3 scale;
 };
-

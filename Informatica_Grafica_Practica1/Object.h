@@ -22,4 +22,3 @@ protected:
 	Mesh mesh;
 	Shader* shader;
 };
-

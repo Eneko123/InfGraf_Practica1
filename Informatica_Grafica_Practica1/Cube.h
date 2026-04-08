@@ -5,12 +5,10 @@
 #include "Object.h"
 #include "Shader.h"
 
-class Triangle : public Object
+class Cube : public Object
 {
 public:
-	Triangle(Shader* shader);
-	~Triangle();
-
+	Cube(Shader* shader);
 	void Init() override;
+	void Update(float deltaTime) override;
 };
-

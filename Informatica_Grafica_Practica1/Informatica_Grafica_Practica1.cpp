@@ -1,4 +1,3 @@
-// InfoGrafica.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 #define _USE_MATH_DEFINES
 
 
@@ -66,7 +65,7 @@ int main()
     CreateShader();
     CreateTriangle();
 
-    glm::mat4 projeccion = glm::perspective(45.0f, mainWindow.getBufferWidth() /  (GLfloat) mainWindow.getBufferHeight(), 0.1f, 100.0f);
+    glm::mat4 projeccion = glm::perspective(45.0f, mainWindow.getBufferWidth() / (GLfloat)mainWindow.getBufferHeight(), 0.1f, 100.0f);
 
 
     float lastTime = (float)glfwGetTime();
