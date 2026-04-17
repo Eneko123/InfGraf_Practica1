@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <glm/glm.hpp>
 
 #include "Mesh.h"
 #include "Shader.h"
